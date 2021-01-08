@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <title>Gender Checker</title>
+</head>
+<body>
+<h1>Gender Probability <br> Checker</h1>
+    <div class="wrapper">                                               
+        <form name="form" id="form" onsubmit="event.preventDefault(); gender()" >
+            <label for="name">Enter your name</label>
+            <input type="text" id="name" name="name" placeholder="First name" required>
+            <button class="button" type="submit" style="vertical-align:middle"><span>Check </span></button>
+            <button class="tryagain"> Try Again</button>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </form>
+        <p id="output"></p>
+    </div>
+    <script src="../js//asyn-await.js"></script>
+</body>
+</html>
